@@ -1,15 +1,17 @@
-import React, { Fragment } from 'react';
+// import React, { Fragment } from 'react';
+// import { render } from "react-dom";
+import { BrowserRouter,Routes,Route } from "react-router-dom";
 function App() { 
-    return ( //
-
-        <Fragment>
-            <h1>React Components!</h1>
-            <hr className="outer" />
-
-            <div className="LifeCyle">
-                
-            </div>
-        </Fragment>
+    return ( 
+        <div className="App">
+           <BrowserRouter>
+            <Routes>
+            <Route path = "/" element = {<h1> Home</h1>}/>
+            <Route path = "/about" element = {<h1> about</h1>}/>
+            <Route path = "/contact" element = {<h1> Contact</h1>}/>
+            </Routes>
+           </BrowserRouter>
+        </div>
     )
 }
 export default App;
