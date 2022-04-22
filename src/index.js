@@ -2,7 +2,7 @@
 import { StrictMode } from 'react';
 import React, { Fragment } from 'react';
 import { createRoot } from 'react-dom/client';
-import App from './app';
+import App from './app';//ewe
 function Hello() {
   return (
     <Fragment>
