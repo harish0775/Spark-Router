@@ -1,12 +1,13 @@
 // import React, { Fragment } from 'react';
 // import { render } from "react-dom";
 import { BrowserRouter,Routes,Route,Navigate} from "react-router-dom";
-import Home from './Components/Home';
-import About from './Components/About';
-import Contact from './Components/Contact';
+import Home from './Basic/Components/Home';
+import About from './Basic/Components/About';
+import Contact from './Basic/Components/Contact';
 import Navbar from "./Navbar";
-import NotFound from "./Components/NotFound";
-import User from "./user.js"
+import Inter from './Intermediate/SearchParams';
+// import NotFound from "./Basic/Components/NotFound";
+import User from "./Basic/user.js"
 
 function App() { 
     return ( 
@@ -20,7 +21,7 @@ function App() {
             {/* <Route path = "/*" element = {<NotFound/>}/> */} 
             <Route path = "/*" element = {<Navigate to='/'/>}/>
             <Route path = "/user/:name" element = {<User/>}/>
-            
+            <Route path = "/inter" element = {<Inter/>}/>
             </Routes>
            </BrowserRouter>
         </div>
