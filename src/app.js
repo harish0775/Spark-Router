@@ -6,6 +6,7 @@ import About from './Components/About';
 import Contact from './Components/Contact';
 import Navbar from "./Navbar";
 import NotFound from "./Components/NotFound";
+import User from "./user.js"
 
 function App() { 
     return ( 
@@ -18,6 +19,8 @@ function App() {
             <Route path = "/contact" element = {<Contact/>}/>
             {/* <Route path = "/*" element = {<NotFound/>}/> */} 
             <Route path = "/*" element = {<Navigate to='/'/>}/>
+            <Route path = "/user/:name" element = {<User/>}/>
+            
             </Routes>
            </BrowserRouter>
         </div>
