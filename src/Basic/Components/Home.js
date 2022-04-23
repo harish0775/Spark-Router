@@ -1,6 +1,6 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
-
+import './home.css'
  function Home() {
   const nagivate = useNavigate();
   const navigateto=()=>{
@@ -11,11 +11,27 @@ import { useNavigate } from 'react-router-dom'
       nagivate('./contact')
      }
   }
+
+  const navigateton=()=>{
+    const x = false;
+    if(x == false){
+     nagivate('./contact')
+    }else{
+     nagivate('./about')
+    }
+ }
   return (
     <div>
          <h1>Home</h1>
-         <button onClick={()=>navigateto()}>Geo-Location</button>
-         <button onClick={()=>navigateto()} >Elem-Area</button>
+         
+         
+         
+         <div className ="header">
+         <h1>Home</h1>
+  <p>Just wait New Feature Roled Out</p>
+  <button onClick={()=>navigateto()}>About Botton</button>
+  <button onClick={()=>navigateton()} >Contact</button>
+</div>
     </div>
   )
 }

@@ -9,7 +9,7 @@ import Inter from './Intermediate/SearchParams';
 // import NotFound from "./Basic/Components/NotFound";
 import User from "./Basic/user.js"
 // import About from "./Basic/Components/About";
-function App() {
+function App() { 
     return ( 
         <div className="App">
            <BrowserRouter>
