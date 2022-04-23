@@ -14,7 +14,7 @@ function Navbar() {
  <li><NavLink to='/'>Home</NavLink></li>
  <li><NavLink to='/about'>About</NavLink></li>
  <li class="services">
- <NavLink to='/'>Server</NavLink>
+ <NavLink to='/'>More</NavLink>
  <ul class="dropdown">
  <li><NavLink to='/'>Home1</NavLink></li>
  <li><NavLink to='/'>Home2</NavLink></li>
@@ -23,6 +23,7 @@ function Navbar() {
  <li><NavLink to='/'>Home5</NavLink></li>
  </ul>
  </li>
+ {/* <li><NavLink to='/server'>Server</NavLink></li> */}
  <li><NavLink to='/Contact'>Contact</NavLink></li>
  </div>
  </ul>
