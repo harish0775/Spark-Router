@@ -8,8 +8,8 @@ import Navbar from "./Navbar";
 import Inter from './Intermediate/SearchParams';
 // import NotFound from "./Basic/Components/NotFound";
 import User from "./Basic/user.js"
-
-function App() { 
+// import About from "./Basic/Components/About";
+function App() {
     return ( 
         <div className="App">
            <BrowserRouter>
