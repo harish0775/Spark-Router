@@ -25,6 +25,7 @@ function Navbar() {
  </li>
  {/* <li><NavLink to='/server'>Server</NavLink></li> */}
  <li><NavLink to='/Contact'>Contact</NavLink></li>
+ <li><NavLink to='/Login'>Login</NavLink></li>
  </div>
  </ul>
  </nav>
